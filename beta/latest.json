@@ -1,8 +1,8 @@
 {
-  "version": "0.6.6",
-  "url": "https://raw.githubusercontent.com/RP-AudioSystems/rp-firmware/main/bins/schermschakelaar-0.6.6.bin",
-  "notes": "Eerste versie met updates via de app",
+  "version": "0.6.7",
+  "url": "https://raw.githubusercontent.com/RP-AudioSystems/rp-firmware/main/bins/schermschakelaar-0.6.7.bin",
+  "notes": "Feestje na een update!",
   "date": "2026-11-25",
-  "size": 1444656,
-  "sha256": "86a6734f7fd3e45069620696872a88e21460f5e451c0e8071b2499e1f0b9cf54"
+  "size": 1445968,
+  "sha256": "5c952a2453aa0688a37acc08bb7828c3dd2b4bd1d6791abb3688c9de9c770910"
 }
