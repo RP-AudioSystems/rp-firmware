@@ -104,3 +104,16 @@ footer .bottom{border-top:1px solid #262a31;margin-top:32px;padding-top:18px;fon
 .badge.main{border-color:var(--cyan);color:var(--cyanT)}
 .badge.main img+svg{display:none}
 .hero .badges{margin-top:6px}
+/* demo-animatie van de schakelaar */
+.press{transform-box:fill-box;transform-origin:center;transition:transform .12s ease}
+.press.down{transform:scale(.93)}
+.halo{transition:opacity .45s ease}
+#demo .lc{transition:fill .3s}
+#demo.off .lc{fill:#4a5059}
+#demo .rays{transition:opacity .35s}
+.mode-lamp,.mode-saver{transition:opacity .8s ease}
+.mode-saver{opacity:0}
+#demo.saver .mode-lamp{opacity:0}
+#demo.saver .mode-saver{opacity:1}
+#demo.saver .halo{opacity:0 !important}
+@media (prefers-reduced-motion:reduce){.press,.halo,.mode-lamp,.mode-saver{transition:none}}
