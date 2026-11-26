@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schermschakelaar · RP Products</title>
 <meta name="description" content="De Schermschakelaar van RP Products: een slimme lichtschakelaar met drie displaytoetsen. Dimmen, klok, weer, afvalwijzer, kinderslot en draadloze updates. Werkt met Home Assistant.">
-<link rel="icon" href="img/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="img/icon-180.png">
-<link rel="stylesheet" href="css/site.css">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="index.html" aria-label="RP Products, naar de homepagina">
-    <img class="logo-z" src="img/rp-logo.png" alt="" width="49" height="34">
-    <img class="logo-w" src="img/rp-logo-wit.png" alt="" width="49" height="34">
+  <a class="brand" href="/" aria-label="RP Products, naar de homepagina">
+    <img class="logo-z" src="/img/rp-logo.png" alt="" width="49" height="34">
+    <img class="logo-w" src="/img/rp-logo-wit.png" alt="" width="49" height="34">
     <span>RP Products</span></a>
-  <nav aria-label="Hoofdmenu"><a href="index.html">Home</a><a href="schermschakelaar.html" aria-current=page>Schermschakelaar</a><a href="index.html#smarthome">Smart home</a><a href="index.html#caraudio">Car audio</a><a href="support.html">App & support</a><a href="index.html#contact">Contact</a></nav>
+  <nav aria-label="Hoofdmenu"><a href="/">Home</a><a href="/schermschakelaar" aria-current=page>Schermschakelaar</a><a href="/#smarthome">Smart home</a><a href="/#caraudio">Car audio</a><a href="/support">App & support</a><a href="/#contact">Contact</a></nav>
 </div></header>
 <main>
 
@@ -25,7 +27,7 @@
     <h1>Schermschakelaar</h1>
     <p>Drie displaytoetsen in één vlak. Elke toets laat zien wat hij doet: een lamp die brandt, een scène, de klok of het weer. Instellen doe je met de app RP Products.</p>
     <p><span class="pill">Binnenkort verkrijgbaar</span></p>
-    <div class="row"><a class="btn" href="support.html">Hoe werkt het?</a><a class="btn alt" href="#werktmet">Werkt met</a></div>
+    <div class="row"><a class="btn" href="/support">Hoe werkt het?</a><a class="btn alt" href="#werktmet">Werkt met</a></div>
   </div>
   <div class="scene"><svg viewBox="40 40 520 420" role="img" aria-label="De Schermschakelaar aan de muur, met drie oplichtende schermpjes">
 <defs>
@@ -76,7 +78,7 @@
     <h2>Werkt met je smart home</h2>
     <p>De Schermschakelaar praat met <b>Home Assistant</b> via MQTT, helemaal lokaal in je eigen huis. Ook systemen die MQTT spreken, zoals openHAB, Domoticz en Homey, kunnen ermee werken.</p>
     <div class="badges"><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Home Assistant</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>MQTT</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>openHAB</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Domoticz</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Homey</span></div>
-    <h3 style="margin-top:22px">Zo koppel je hem aan Home Assistant</h3>
+    <h3 class="mt">Zo koppel je hem aan Home Assistant</h3>
     <ol class="steps">
       <li><b>MQTT aanzetten</b>Installeer in Home Assistant de Mosquitto-broker en de MQTT-integratie, als je die nog niet hebt.</li>
       <li><b>Koppelen met de app</b>De wizard in de app RP Products vraagt om je wifi en je MQTT-gegevens. Koppel je Home Assistant ook in de app, dan kies je je lampen uit een lijst.</li>
@@ -95,10 +97,10 @@
 <footer><div class="wrap">
   <div><h3>RP Products</h3><p class="small">Slimme producten voor je smart home, ontworpen en gebouwd in Nederland. RP Products is een merk van RP AudioSystems: car audio, multimedia, navigatie en bluetooth.</p></div>
   <div><h3>Pagina's</h3><ul>
-    <li><a href="schermschakelaar.html">Schermschakelaar</a></li>
-    <li><a href="index.html#caraudio">Car audio &amp; inbouw</a></li>
-    <li><a href="support.html">App &amp; support</a></li>
-    <li><a href="privacy.html">Privacybeleid</a></li></ul></div>
+    <li><a href="/schermschakelaar">Schermschakelaar</a></li>
+    <li><a href="/#caraudio">Car audio &amp; inbouw</a></li>
+    <li><a href="/support">App &amp; support</a></li>
+    <li><a href="/privacy">Privacybeleid</a></li></ul></div>
   <div><h3>Contact</h3><ul>
     <li><a href="mailto:info@rpproducts.nl">info@rpproducts.nl</a></li>
     <li>KvK 74958119</li><li>btw-id NL002239610B86</li></ul></div>

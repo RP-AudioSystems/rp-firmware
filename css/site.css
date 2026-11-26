@@ -117,3 +117,5 @@ footer .bottom{border-top:1px solid #262a31;margin-top:32px;padding-top:18px;fon
 #demo.saver .mode-saver{opacity:1}
 #demo.saver .halo{opacity:0 !important}
 @media (prefers-reduced-motion:reduce){.press,.halo,.mode-lamp,.mode-saver{transition:none}}
+.mt{margin-top:20px}
+.scene-card{padding:0;overflow:hidden;background:var(--wall);min-height:340px}
