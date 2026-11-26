@@ -17,32 +17,76 @@
     <img class="logo-z" src="/img/rp-logo.png" alt="" width="49" height="34">
     <img class="logo-w" src="/img/rp-logo-wit.png" alt="" width="49" height="34">
     <span>RP Products</span></a>
-  <nav aria-label="Hoofdmenu"><a href="/" aria-current=page>Home</a><a href="/schermschakelaar">Schermschakelaar</a><a href="/#smarthome">Smart home</a><a href="/#caraudio">Car audio</a><a href="/support">App & support</a><a href="/#contact">Contact</a></nav>
+  <nav aria-label="Hoofdmenu"><a href="/" aria-current=page>Home</a><a href="/schermschakelaar">Schermschakelaar</a><a href="/smart-home">Smart home</a><a href="/handleiding">Handleiding</a><a href="/car-audio">Car audio</a><a href="/support">Hulp</a><a href="/contact">Contact</a></nav>
 </div></header>
 <main>
 
-<section class="hero"><div class="wrap">
-  <div class="txt">
-    <span class="tag">RP Products · smart home</span>
-    <h1>Je lichtschakelaar, maar dan slim</h1>
-    <p>De <b>Schermschakelaar</b> heeft drie kleine schermpjes die laten zien wat elke toets doet. Hij praat met je smart home, toont de klok, het weer en wanneer de container aan de straat moet.</p>
-    <div class="badges"><span class="badge main"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Werkt met Home Assistant</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>MQTT</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>openHAB</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Domoticz</span><span class="badge"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 9.5 10 3l7.5 6.5V17h-5v-4.5h-5V17h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Homey</span></div>
-    <div class="row"><a class="btn" href="/schermschakelaar">Bekijk de Schermschakelaar</a><a class="btn alt" href="#smarthome">Hoe werkt het?</a></div>
-  </div>
-  <div class="scene"><svg id="demo" viewBox="40 40 520 420" role="img" aria-label="De Schermschakelaar aan de muur, met drie oplichtende schermpjes">
+<section class="stage">
+  <svg id="demo" class="room" viewBox="0 0 1200 640" preserveAspectRatio="xMaxYMid slice" role="img" aria-label="Een woonkamer met een lamp die feller, zachter, uit en weer aan gaat terwijl iemand de Schermschakelaar aan de muur bedient">
 <defs>
-  <radialGradient id="light" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".28"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
+  <filter id="blur" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="9"/></filter>
+  <radialGradient id="lampglow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 170) scale(520 430)">
+    <stop offset="0" stop-color="#ffe2b0" stop-opacity="1"/><stop offset=".4" stop-color="#f6b553" stop-opacity=".55"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
+  <radialGradient id="floorglow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 330) scale(180 260)">
+    <stop offset="0" stop-color="#ffcf8a" stop-opacity=".7"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
+  <linearGradient id="wallR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cfc8bd"/><stop offset=".08" stop-color="#ece8e1"/><stop offset="1" stop-color="#f4f1ec"/></linearGradient>
+  <linearGradient id="spill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2a93b" stop-opacity=".35"/><stop offset=".7" stop-color="#f2a93b" stop-opacity="0"/></linearGradient>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".55"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
   <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f3"/></linearGradient>
   <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1e24"/><stop offset="1" stop-color="#06070a"/></linearGradient>
-  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0b0c0f" flood-opacity=".22"/></filter>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0b0c0f" flood-opacity=".28"/></filter>
 </defs>
-<g transform="translate(110 92)" filter="url(#sh)">
-  <rect width="380" height="330" rx="44" fill="url(#plate)" stroke="#d8dde3"/>
-  <rect x="6" y="6" width="368" height="318" rx="40" fill="none" stroke="#fff" stroke-opacity=".9"/>
+
+<!-- woonkamer (wazig, op de achtergrond) -->
+<g filter="url(#blur)">
+  <rect x="-40" y="-40" width="920" height="720" fill="#cdb397"/>
+  <rect x="-40" y="470" width="920" height="210" fill="#7a5a43"/>
+  <path d="M-40 470h920" stroke="#5d4433" stroke-width="6"/>
+  <!-- raam met avondlucht -->
+  <rect x="560" y="90" width="210" height="270" rx="6" fill="#4a3a2e"/>
+  <rect x="574" y="104" width="182" height="242" fill="#1c2742"/>
+  <circle cx="700" cy="160" r="16" fill="#e9eef7"/>
+  <path d="M665 104v242M574 225h182" stroke="#4a3a2e" stroke-width="10"/>
+  <!-- schilderij -->
+  <rect x="250" y="210" width="150" height="104" rx="4" fill="#3d4b5a"/><path d="M262 300l40-46 30 32 22-20 34 34z" fill="#c97b4a"/>
+  <!-- bank -->
+  <rect x="150" y="360" width="400" height="120" rx="34" fill="#3f5266"/>
+  <rect x="130" y="390" width="70" height="110" rx="26" fill="#354658"/><rect x="500" y="390" width="70" height="110" rx="26" fill="#354658"/>
+  <rect x="190" y="372" width="150" height="70" rx="22" fill="#4b6077"/><rect x="360" y="372" width="150" height="70" rx="22" fill="#4b6077"/>
+  <rect x="210" y="350" width="70" height="62" rx="18" fill="#d88a52"/><rect x="430" y="350" width="70" height="62" rx="18" fill="#ead9bb"/>
+  <rect x="160" y="500" width="14" height="30" fill="#2a2a2a"/><rect x="526" y="500" width="14" height="30" fill="#2a2a2a"/>
+  <!-- kleed en salontafel -->
+  <ellipse cx="380" cy="590" rx="330" ry="46" fill="#a8806a"/>
+  <rect x="290" y="520" width="190" height="20" rx="8" fill="#5a3f2d"/><rect x="305" y="540" width="10" height="44" fill="#5a3f2d"/><rect x="455" y="540" width="10" height="44" fill="#5a3f2d"/>
+  <!-- staande lamp en plant -->
+  <path d="M80 540V250" stroke="#2b2b2b" stroke-width="6"/><path d="M42 252h76l-14-62H56z" fill="#f0d3a4"/><ellipse cx="80" cy="544" rx="34" ry="8" fill="#2b2b2b"/>
+  <rect x="640" y="470" width="70" height="70" rx="10" fill="#c8b8a4"/>
+  <path d="M675 470c-50-40-40-120-10-150M675 470c10-60 40-110 70-120M675 470c-10-50-60-80-90-70M675 470c30-30 70-40 90-20" stroke="#4f7a4f" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- hanglamp -->
+  <path d="M420 -40v150" stroke="#2b2b2b" stroke-width="4"/><path d="M372 150h96l-18-44h-60z" fill="#2b2b2b"/>
 </g>
-<g transform="translate(110 92)">
-<g class="mode-lamp">  <!-- links: dimmen -->
+<!-- het licht in de kamer: demo.js regelt de helderheid -->
+<g class="lit">
+  <rect x="-40" y="-40" width="920" height="720" fill="url(#lampglow)"/>
+  <rect x="-40" y="-40" width="920" height="720" fill="url(#floorglow)"/>
+  <ellipse cx="420" cy="156" rx="60" ry="16" fill="#fff4dd" filter="url(#blur)"/>
+</g>
+<rect class="dark" x="-40" y="-40" width="920" height="720" fill="#07080b" opacity=".04"/>
+
+<!-- muur met de schakelaar (scherp, op de voorgrond) -->
+<g>
+  <rect x="820" y="-40" width="420" height="720" fill="url(#wallR)"/>
+  <rect class="spill" x="820" y="-40" width="420" height="720" fill="url(#spill)"/>
+  <rect class="wdark" x="820" y="-40" width="420" height="720" fill="#07080b" opacity=".12"/>
+  <rect x="812" y="-40" width="10" height="720" fill="#000" opacity=".18"/>
+</g>
+<g transform="translate(872 190) scale(.78)">
+  <g filter="url(#sh)">
+    <rect width="380" height="330" rx="44" fill="url(#plate)" stroke="#d8dde3"/>
+    <rect x="6" y="6" width="368" height="318" rx="40" fill="none" stroke="#fff" stroke-opacity=".9"/>
+  </g>
+  <rect class="pdark" width="380" height="330" rx="44" fill="#07080b" opacity="0"/>
+  <g class="mode-lamp">  <!-- links: dimmen -->
   <g transform="translate(32 92)"><g class="press p0">
     <rect width="96" height="112" rx="14" fill="#d9dde2"/><rect x="6" y="6" width="84" height="100" rx="10" fill="url(#glass)"/>
     <rect x="30" y="54" width="36" height="7" rx="3.5" fill="#00a3d9"/>
@@ -55,7 +99,7 @@
     <rect width="96" height="112" rx="14" fill="#d9dde2"/><rect x="6" y="6" width="84" height="100" rx="10" fill="url(#glass)"/>
     <path class="lc" d="M33 58h30l-7-15h-16z" fill="#f2a93b"/><circle class="lc" cx="48" cy="64" r="5" fill="#f2a93b"/>
     <path class="rays" d="M48 43v-7M36 72l-5 6M48 74v8M60 72l5 6M28 64h-6M68 64h6" stroke="#f2a93b" stroke-width="3" stroke-linecap="round"/>
-    <text class="lc" x="48" y="96" text-anchor="middle" font-size="11" fill="#f2a93b" font-family="Poppins,sans-serif">Keuken</text>
+    <text class="lc" x="48" y="96" text-anchor="middle" font-size="11" fill="#f2a93b" font-family="Poppins,sans-serif">Woonkamer</text>
     </g>
   </g>
   <!-- rechts: feller -->
@@ -80,82 +124,31 @@
     <path d="M32 40h32M42 40v-5h12v5M35 40l3 36h20l3-36" stroke="#4fc37e" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
     <text x="48" y="94" text-anchor="middle" font-size="11" fill="#4fc37e" font-family="Poppins,sans-serif">GFT morgen</text>
   </g>
-</g></g>
-</svg></div>
-</div></section>
+</g>
+  <circle class="touch" cx="0" cy="0" r="34" fill="#ffffff" opacity="0"/>
+</g>
+</svg>
+  <div class="stage-txt"><div class="wrap">
+    <span class="tag">RP Products · smart home</span>
+    <h1>Je lichtschakelaar,<br>maar dan slim.</h1>
+    <p>Drie toetsen met een eigen schermpje. Je ziet meteen wat elke toets doet, en je huis doet mee.</p>
+    <div class="row"><a class="btn light" href="/schermschakelaar">Bekijk de Schermschakelaar</a><a class="btn ghost" href="/smart-home">Hoe werkt het?</a></div>
+  </div></div>
+</section>
 
-<section class="band" id="smarthome"><div class="wrap">
-  <span class="tag">Smart home</span>
-  <h2>Gemaakt voor je smart home</h2>
-  <p class="mut">De Schermschakelaar is een slim apparaat: hij hangt aan je wifi en werkt samen met <b>Home Assistant</b>. Je bedient er de lampen, scènes en apparaten mee die je al in je smart home hebt, en hij laat informatie uit je huis op zijn schermpjes zien.</p>
-  <div class="grid"><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linejoin="round"><path d="M5 19L20 6l15 13M10 15v19h20V15"/><rect x="17" y="22" width="6" height="12" fill="#f2a93b" stroke="none"/></svg><h3>Bedien wat je al hebt</h3><p>Elke toets kan een lamp, stekker, scène, script, ventilator of rolluik uit Home Assistant bedienen. In de app kies je ze gewoon uit een lijst.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13l15 13-7 6V8l7 6-15 13"/></svg><h3>Lokaal, zonder cloud</h3><p>De schakelaar praat via MQTT rechtstreeks met jouw Home Assistant, binnen je eigen netwerk. Geen account, geen abonnement, ook geen internet nodig voor het schakelen.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><circle cx="20" cy="20" r="15"/><path d="M20 11v9l6 4" stroke="#f2a93b"/></svg><h3>Informatie op de schermpjes</h3><p>De klok, het weer, de temperatuur van je thermostaat (alleen aflezen) en de afvalwijzer komen uit je smart home op de schakelaar.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M33 20a13 13 0 1 1-4-9.4"/><path d="M33 6v7h-7"/><path d="M20 14v8l5 3" stroke="#f2a93b"/></svg><h3>Je eigen automatiseringen</h3><p>Elke toetsdruk, kort of lang, komt als gebeurtenis in Home Assistant binnen. Zo kun je er ook je eigen automatiseringen aan hangen.</p></div></div>
-  <p class="mut small mt">Gebruik je openHAB, Domoticz of Homey? Die kunnen via MQTT ook met de schakelaar werken.</p>
+<section class="band"><div class="wrap">
+  <h2 class="center">Eén schakelaar. Je hele huis.</h2>
+  <div class="grid teasers"><a class="card link" href="/schermschakelaar"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2"><rect x="11" y="4" width="18" height="32" rx="4"/><path d="M18 31h4" stroke-linecap="round"/><rect x="15" y="10" width="10" height="12" rx="2" fill="#f2a93b" stroke="none"/></svg><h3>De Schermschakelaar</h3><p>Drie displaytoetsen in één strak vlak, met klok, weer en afvalwijzer.</p><span class="more">Bekijk het product →</span></a><a class="card link" href="/smart-home"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linejoin="round"><path d="M5 19L20 6l15 13M10 15v19h20V15"/><rect x="17" y="22" width="6" height="12" fill="#f2a93b" stroke="none"/></svg><h3>Werkt met je smart home</h3><p>Lokaal gekoppeld met Home Assistant, zonder cloud of abonnement.</p><span class="more">Lees hoe het werkt →</span></a><a class="card link" href="/handleiding"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><circle cx="20" cy="20" r="15"/><path d="M20 11v9l6 4" stroke="#f2a93b"/></svg><h3>Klaar in 1, 2, 3</h3><p>Aansluiten, de app openen en de wizard volgen. Meer is het niet.</p><span class="more">Naar de handleiding →</span></a></div>
 </div></section>
 
 <section class="band soft"><div class="wrap split">
   <div>
-    <span class="tag">RP Products</span>
-    <h2>De Schermschakelaar</h2>
-    <p>Een lichtschakelaar met drie kleine schermpjes. Elke toets laat zien wat hij doet, met een eigen icoon en kleur. Je stelt hem in met de app, zonder gedoe.</p>
-    <ul class="check">
-      <li>Lamp aan, uit en traploos dimmen</li>
-      <li>Klok, weer en afvalwijzer in één oogopslag</li>
-      <li>Kinderslot en draadloze updates</li>
-    </ul>
-    <p><span class="pill">Binnenkort verkrijgbaar</span></p>
-    <div class="row"><a class="btn" href="/schermschakelaar">Meer over de Schermschakelaar</a></div>
+    <span class="tag">RP AudioSystems</span>
+    <h2>Ook voor je auto</h2>
+    <p class="mut">Het bedrijf achter RP Products bouwt al jaren car audio, multimedia, navigatie en bluetooth in. Netjes, en afgestemd op jouw auto.</p>
+    <div class="row"><a class="btn" href="/car-audio">Car audio &amp; inbouw</a></div>
   </div>
-  <div class="scene card scene-card"><svg viewBox="40 40 520 420" role="img" aria-label="De Schermschakelaar aan de muur, met drie oplichtende schermpjes">
-<defs>
-  <radialGradient id="light" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".28"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
-  <radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f2a93b" stop-opacity=".55"/><stop offset="1" stop-color="#f2a93b" stop-opacity="0"/></radialGradient>
-  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f3"/></linearGradient>
-  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1e24"/><stop offset="1" stop-color="#06070a"/></linearGradient>
-  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0b0c0f" flood-opacity=".22"/></filter>
-</defs>
-<g transform="translate(110 92)" filter="url(#sh)">
-  <rect width="380" height="330" rx="44" fill="url(#plate)" stroke="#d8dde3"/>
-  <rect x="6" y="6" width="368" height="318" rx="40" fill="none" stroke="#fff" stroke-opacity=".9"/>
-</g>
-<g transform="translate(110 92)">
-  <!-- screensaver: weer, klok, afval -->
-  <g transform="translate(32 92)">
-    <rect width="96" height="112" rx="14" fill="#d9dde2"/><rect x="6" y="6" width="84" height="100" rx="10" fill="url(#glass)"/>
-    <circle cx="40" cy="44" r="10" fill="#f2a93b"/><path d="M38 64a10 10 0 0 1 4-19 13 13 0 0 1 24 4 8 8 0 0 1 0 15z" fill="#dfe6ee"/>
-    <text x="48" y="92" text-anchor="middle" font-size="13" fill="#eef1f4" font-family="Poppins,sans-serif" font-weight="700">12°</text>
-  </g>
-  <g transform="translate(142 92)">
-    <rect width="96" height="112" rx="14" fill="#d9dde2"/><rect x="6" y="6" width="84" height="100" rx="10" fill="url(#glass)"/>
-    <text x="48" y="62" text-anchor="middle" font-size="22" fill="#eef1f4" font-family="Poppins,sans-serif" font-weight="700" class="clk">21:30</text>
-    <text x="48" y="84" text-anchor="middle" font-size="11" fill="#9aa2ad" font-family="Poppins,sans-serif">Dinsdag</text>
-  </g>
-  <g transform="translate(252 92)">
-    <rect width="96" height="112" rx="14" fill="#d9dde2"/><rect x="6" y="6" width="84" height="100" rx="10" fill="url(#glass)"/>
-    <path d="M32 40h32M42 40v-5h12v5M35 40l3 36h20l3-36" stroke="#4fc37e" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
-    <text x="48" y="94" text-anchor="middle" font-size="11" fill="#4fc37e" font-family="Poppins,sans-serif">GFT morgen</text>
-  </g>
-</g>
-</svg></div>
-</div></section>
-
-<section class="band" id="caraudio"><div class="wrap">
-  <span class="tag">RP AudioSystems, het bedrijf achter RP Products</span>
-  <h2>Ook voor je auto: car audio en multimedia</h2>
-  <p class="mut">Een betere klank, een modern scherm of handsfree bellen in een auto die dat nog niet kan. Wij adviseren wat bij je auto en je wensen past, en bouwen het netjes in.</p>
-  <div class="grid"><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><rect x="8" y="4" width="24" height="32" rx="5"/><circle cx="20" cy="24" r="6.5"/><circle cx="20" cy="24" r="2" fill="#00a3d9"/><circle cx="20" cy="11" r="2.5"/></svg><h3>Car audio</h3><p>Speakers, versterkers en subwoofers: meer klank en een rijker geluid, afgestemd op je auto.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="8" width="32" height="20" rx="4"/><path d="M14 34h12M20 28v6"/><path d="M12 18l5 4 9-8" stroke="#f2a93b"/></svg><h3>Multimedia</h3><p>Een modern scherm of het uitbreiden van je bestaande systeem, zodat het weer bij deze tijd past.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linejoin="round"><path d="M20 36s11-11.5 11-20a11 11 0 0 0-22 0c0 8.5 11 20 11 20z"/><circle cx="20" cy="16" r="4" fill="#f2a93b" stroke="none"/></svg><h3>Navigatie</h3><p>Navigatie die past bij je auto en je manier van rijden, overzichtelijk in beeld.</p></div><div class="card"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13l15 13-7 6V8l7 6-15 13"/></svg><h3>Bluetooth &amp; handsfree</h3><p>Veilig bellen en draadloos muziek streamen, ook in auto's die dat standaard niet kunnen.</p></div></div>
-  <div class="row"><a class="btn" href="#contact">Vraag advies aan</a></div>
-</div></section>
-
-<section class="band soft" id="contact"><div class="wrap split">
-  <div>
-    <h2>Contact</h2>
-    <p class="mut">Vragen over een inbouw, een prijs op maat of over de Schermschakelaar? Stuur een mail, dan reageren we zo snel mogelijk.</p>
-    <div class="row"><a class="btn" href="mailto:info@rpproducts.nl">Mail info@rpproducts.nl</a></div>
-  </div>
-  <div class="card">
-    <h3>RP AudioSystems</h3>
-    <p>E-mail: <a href="mailto:info@rpproducts.nl">info@rpproducts.nl</a><br>KvK 74958119<br>btw-id NL002239610B86</p>
-  </div>
+  <div class="grid two"><div class="card mini"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><rect x="8" y="4" width="24" height="32" rx="5"/><circle cx="20" cy="24" r="6.5"/><circle cx="20" cy="24" r="2" fill="#00a3d9"/><circle cx="20" cy="11" r="2.5"/></svg><b>Car audio</b></div><div class="card mini"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="8" width="32" height="20" rx="4"/><path d="M14 34h12M20 28v6"/><path d="M12 18l5 4 9-8" stroke="#f2a93b"/></svg><b>Multimedia</b></div><div class="card mini"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.2" stroke-linejoin="round"><path d="M20 36s11-11.5 11-20a11 11 0 0 0-22 0c0 8.5 11 20 11 20z"/><circle cx="20" cy="16" r="4" fill="#f2a93b" stroke="none"/></svg><b>Navigatie</b></div><div class="card mini"><svg viewBox="0 0 40 40" fill="none" stroke="#00a3d9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13l15 13-7 6V8l7 6-15 13"/></svg><b>Bluetooth</b></div></div>
 </div></section>
 <script src="js/demo.js" defer></script>
 
@@ -164,8 +157,10 @@
   <div><h3>RP Products</h3><p class="small">Slimme producten voor je smart home, ontworpen en gebouwd in Nederland. RP Products is een merk van RP AudioSystems: car audio, multimedia, navigatie en bluetooth.</p></div>
   <div><h3>Pagina's</h3><ul>
     <li><a href="/schermschakelaar">Schermschakelaar</a></li>
-    <li><a href="/#caraudio">Car audio &amp; inbouw</a></li>
-    <li><a href="/support">App &amp; support</a></li>
+    <li><a href="/smart-home">Smart home</a></li>
+    <li><a href="/handleiding">Handleiding</a></li>
+    <li><a href="/support">Hulp &amp; vragen</a></li>
+    <li><a href="/car-audio">Car audio &amp; inbouw</a></li>
     <li><a href="/privacy">Privacybeleid</a></li></ul></div>
   <div><h3>Contact</h3><ul>
     <li><a href="mailto:info@rpproducts.nl">info@rpproducts.nl</a></li>
