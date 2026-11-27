@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handleiding Schermschakelaar · RP Products</title>
+<meta name="description" content="De complete handleiding van de Schermschakelaar: aansluiten, instellen met de app, bediening, menu, kinderslot, Home Assistant, updates, resetten en problemen oplossen.">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/" aria-label="RP Products, naar de homepagina">
+    <img class="logo-z" src="/img/rp-logo.png" alt="" width="49" height="34">
+    <img class="logo-w" src="/img/rp-logo-wit.png" alt="" width="49" height="34">
+    <span>RP Products</span></a>
+  <nav aria-label="Hoofdmenu"><a href="/">Home</a><a href="/schermschakelaar">Schermschakelaar</a><a href="/smart-home">Smart home</a><a href="/handleiding" aria-current=page>Handleiding</a><a href="/car-audio">Car audio</a><a href="/support">Hulp</a><a href="/contact">Contact</a></nav>
+</div></header>
+<main>
+
+<section class="band"><div class="wrap">
+  <span class="tag">Handleiding</span>
+  <h1>Handleiding Schermschakelaar</h1>
+  <p class="mut lead">Alles over aansluiten, instellen en dagelijks gebruik. Geldt voor de Schermschakelaar met software vanaf versie 0.7.</p>
+</div></section>
+
+<section class="band soft manual-band"><div class="wrap manual">
+  <nav class="mtoc" aria-label="Inhoud van de handleiding"><b>Inhoud</b><a href="#veiligheid">Veiligheid</a><a href="#overzicht">Overzicht</a><a href="#aansluiten">Aansluiten</a><a href="#instellen">Eerste keer instellen</a><a href="#bediening">Bediening</a><a href="#menu">Het menu</a><a href="#screensaver">Screensaver</a><a href="#afval">Afvalwijzer</a><a href="#kinderslot">Kinderslot</a><a href="#homeassistant">Home Assistant</a><a href="#updates">Updates</a><a href="#koppelstand">Koppelstand</a><a href="#resetten">Resetten</a><a href="#problemen">Problemen oplossen</a><a href="#specificaties">Technische gegevens</a></nav>
+  <article class="legal">
+
+  <h2 id="veiligheid">1. Veiligheid</h2>
+  <ul class="check">
+    <li>De schakelaar werkt op 230 V. Laat hem <b>altijd aansluiten door een bevoegd installateur</b>.</li>
+    <li>Zet vóór het aansluiten of verwijderen de groep in de meterkast uit.</li>
+    <li>Alleen voor gebruik binnenshuis, in een droge ruimte. Niet in de badkamer bij bad of douche.</li>
+    <li>Maak de schakelaar niet open en houd hem uit de buurt van water. Schoonmaken met een droge of licht vochtige doek.</li>
+  </ul>
+
+  <h2 id="overzicht">2. Overzicht</h2>
+  <p>De Schermschakelaar heeft <b>drie toetsen</b>, elk met een eigen schermpje. Het schermpje laat zien wat de toets doet: een icoon, een kleur en een korte tekst.</p>
+  <table><tr><th>Toets</th><th>Standaard</th></tr>
+    <tr><td>Links</td><td>Zachter (dimmen)</td></tr>
+    <tr><td>Midden</td><td>Lamp aan/uit. Vasthouden opent het menu.</td></tr>
+    <tr><td>Rechts</td><td>Feller (dimmen)</td></tr></table>
+  <p class="mt">Wat elke toets doet, kies je zelf in de app. Een toets kan ook een andere lamp, een stekker, een scène of een script bedienen.</p>
+
+  <h2 id="aansluiten">3. Aansluiten</h2>
+  <ol class="steps">
+    <li><b>Stroom uit</b>Zet de groep in de meterkast uit en controleer of de draden spanningsloos zijn.</li>
+    <li><b>Aansluiten</b>De installateur sluit de schakelaar aan in een inbouwdoos met fase en nul-draad, en schroeft de grondplaat vast.</li>
+    <li><b>Stroom aan</b>Zet de groep weer aan. De schermpjes gaan aan en de schakelaar vraagt om instellen via de app.</li>
+  </ol>
+
+  <h2 id="instellen">4. Eerste keer instellen</h2>
+  <p>Je hebt nodig: een Android-telefoon met Bluetooth, de app <b>RP Products</b>, de naam en het wachtwoord van je wifi (2,4 GHz) en, als je Home Assistant gebruikt, de gegevens van je MQTT-server.</p>
+  <ol class="steps">
+    <li><b>Open de app</b>Tik op <i>Schakelaar toevoegen</i>. Geef de app toestemming voor apparaten in de buurt (Bluetooth).</li>
+    <li><b>Schakelaar zoeken</b>Een nieuwe schakelaar staat vanzelf klaar om te koppelen. Houd je telefoon in de buurt; de app vindt hem binnen een paar seconden. Wordt hij niet gevonden, zet hem dan in de <a href="#koppelstand">koppelstand</a>.</li>
+    <li><b>Ruimte kiezen</b>Geef de schakelaar een naam, bijvoorbeeld de ruimte waar hij hangt.</li>
+    <li><b>Wifi</b>Kies je netwerk en vul het wachtwoord in.</li>
+    <li><b>Smart home</b>Kies <i>Home Assistant</i> en vul je MQTT-gegevens in, of kies <i>Later</i> om dit over te slaan.</li>
+    <li><b>Toetsen</b>Kies een indeling en welke lamp de schakelaar bedient.</li>
+    <li><b>Versturen</b>De app stuurt alles via Bluetooth naar de schakelaar. De schermpjes kleuren als een regenboog en tonen <b>Gelukt!</b>. Daarna start de schakelaar opnieuw op en maakt hij verbinding met je wifi. Dat duurt ongeveer een halve minuut.</li>
+  </ol>
+
+  <h2 id="bediening">5. Bediening</h2>
+  <table><tr><th>Wat je doet</th><th>Wat er gebeurt</th></tr>
+    <tr><td>Kort drukken</td><td>De toets doet zijn actie, bijvoorbeeld lamp aan/uit.</td></tr>
+    <tr><td>Dimtoets vasthouden</td><td>De lamp wordt steeds feller of zachter zolang je vasthoudt.</td></tr>
+    <tr><td>Midden vasthouden</td><td>Het <a href="#menu">menu</a> gaat open. Staat er een afvalmelding, dan vink je die eerst af.</td></tr>
+    <tr><td>Links + rechts 3 s vasthouden</td><td><a href="#kinderslot">Kinderslot</a> aan of uit.</td></tr>
+    <tr><td>Midden 5 s vasthouden</td><td><a href="#koppelstand">Koppelstand</a> voor de app.</td></tr>
+    <tr><td>Alle drie 10 s vasthouden</td><td><a href="#resetten">Fabrieksinstellingen</a> terugzetten.</td></tr></table>
+
+  <h2 id="menu">6. Het menu</h2>
+  <p>Houd de middelste toets vast om het menu te openen. In het menu:</p>
+  <ul class="check">
+    <li><b>Links</b>: terug.</li>
+    <li><b>Midden</b>: naar het volgende onderdeel. Bolletjes onderaan laten zien waar je bent.</li>
+    <li><b>Rechts</b>: openen.</li>
+  </ul>
+  <p>De onderdelen zijn <b>Lamp</b>, <b>Thermostaat</b> (alleen aflezen), <b>Screensaver</b>, <b>Tijd</b>, <b>Weer</b> en <b>Afval</b>. Doe je een minuut niets, dan gaat het menu vanzelf dicht.</p>
+
+  <h2 id="screensaver">7. Screensaver</h2>
+  <p>Na 5 minuten zonder bediening toont de schakelaar de screensaver: links het weer en de buitentemperatuur, in het midden de klok (analoog of digitaal) en rechts de temperatuur binnen. De schermpjes worden dan ook wat minder fel. Druk op een willekeurige toets om hem te wekken; die eerste druk doet verder niets.</p>
+  <p>In de app stel je in na hoeveel minuten de screensaver komt, welke klok je wilt en of een bewegingssensor uit Home Assistant de schakelaar mag wekken.</p>
+
+  <h2 id="afval">8. Afvalwijzer</h2>
+  <p>Koppel in de app de afvalsensoren uit Home Assistant. De avond vóór ophalen zie je dan een bakje in de kleur van de container. Heb je hem aan de straat gezet? <b>Houd de middelste toets vast</b> en de melding is afgevinkt. In het menu onder <i>Afval</i> zie je wat er vandaag en morgen wordt opgehaald.</p>
+
+  <h2 id="kinderslot">9. Kinderslot</h2>
+  <p>Houd de <b>linker en rechter toets samen 3 seconden</b> vast. Je ziet <i>Slot aan</i> en de toetsen doen niets meer; bij een druk verschijnt <i>Kinderslot</i>. Nog een keer 3 seconden zet het slot weer uit. Je kunt het slot ook in de app aan- en uitzetten.</p>
+
+  <h2 id="homeassistant">10. Home Assistant</h2>
+  <p>De schakelaar praat via <b>MQTT</b> met Home Assistant, helemaal binnen je eigen netwerk.</p>
+  <ol class="steps">
+    <li><b>MQTT klaarzetten</b>Installeer in Home Assistant de <i>Mosquitto broker</i> en voeg de integratie <i>MQTT</i> toe.</li>
+    <li><b>Gegevens invullen</b>Vul in de app het adres van je Home Assistant en de MQTT-gebruiker en het wachtwoord in.</li>
+    <li><b>Lampen kiezen</b>Koppel je Home Assistant ook in de app, dan kies je lampen, scènes en sensoren uit een lijst.</li>
+  </ol>
+  <p class="mt">Elke toetsdruk (kort of lang) komt als gebeurtenis in Home Assistant binnen. Zo kun je er ook je eigen automatiseringen aan hangen. Gebruik je openHAB, Domoticz of Homey? Die kunnen de MQTT-berichten ook gebruiken.</p>
+
+  <h2 id="updates">11. Updates</h2>
+  <p>De schakelaar kijkt zelf regelmatig of er nieuwe software is. Staat er een update klaar, dan zie je een <b>paars pijltje</b> op het linkerscherm en een melding in de app.</p>
+  <ul class="check">
+    <li><b>Met de app</b>: open je schakelaar en tik op <i>Bijwerken</i>. Blijf in de buurt van de schakelaar; de app volgt de update via Bluetooth en waarschuwt als het signaal zwak is.</li>
+    <li><b>Automatisch</b>: zet in de app <i>'s nachts automatisch bijwerken</i> aan. De schakelaar installeert de update dan rond 3 uur 's nachts.</li>
+  </ul>
+  <p>Tijdens het bijwerken start de schakelaar opnieuw op. Na afloop volgt een klein feestje op de schermen. Haal tijdens een update de stroom er niet af.</p>
+
+  <h2 id="koppelstand">12. Koppelstand</h2>
+  <p>Wil je de schakelaar (opnieuw) met de app verbinden, bijvoorbeeld met een nieuwe telefoon? <b>Houd de middelste toets 5 seconden</b> vast tot je <i>Koppelen</i> ziet. De schakelaar is dan 3 minuten zichtbaar voor de app.</p>
+
+  <h2 id="resetten">13. Resetten</h2>
+  <ul class="check">
+    <li><b>Met de app</b>: open je schakelaar → <i>Verwijderen of resetten</i> → <i>Resetten en verwijderen</i>. De schakelaar wordt gewist en uit de app gehaald.</li>
+    <li><b>Op de schakelaar</b>: houd <b>alle drie de toetsen 10 seconden</b> vast. Het scherm telt af; eerder loslaten annuleert.</li>
+  </ul>
+  <p>Na een reset zijn wifi, toetsen en koppelingen gewist en is de schakelaar klaar om opnieuw in te stellen, of voor een nieuwe eigenaar.</p>
+
+  <h2 id="problemen">14. Problemen oplossen</h2>
+  <table><tr><th>Je ziet</th><th>Betekenis</th><th>Oplossing</th></tr>
+    <tr><td>Instellen via de app</td><td>De schakelaar is nog niet ingesteld.</td><td>Volg <a href="#instellen">Eerste keer instellen</a>.</td></tr>
+    <tr><td>Geen Wi-Fi</td><td>Geen verbinding met je wifi.</td><td>Controleer of je router aan staat en of het een 2,4 GHz-netwerk is. Pas zo nodig het wachtwoord aan in de app.</td></tr>
+    <tr><td>Geen MQTT</td><td>Wel wifi, maar Home Assistant is niet bereikbaar.</td><td>Controleer of Mosquitto draait en of adres, gebruiker en wachtwoord kloppen.</td></tr>
+    <tr><td>Kinderslot</td><td>Het kinderslot staat aan.</td><td>Links en rechts 3 seconden vasthouden.</td></tr>
+    <tr><td>Paars pijltje</td><td>Er staat een update klaar.</td><td>Bijwerken in de app, zie <a href="#updates">Updates</a>.</td></tr>
+    <tr><td>App vindt schakelaar niet</td><td>Niet in koppelstand of te ver weg.</td><td>Middelste toets 5 s vasthouden en dichterbij gaan staan.</td></tr></table>
+  <p class="mt">Kom je er niet uit? Kijk bij <a href="/support">Hulp &amp; vragen</a> of mail naar <a href="mailto:info@rpproducts.nl">info@rpproducts.nl</a>.</p>
+
+  <h2 id="specificaties">15. Technische gegevens</h2>
+  <table>
+    <tr><td>Toetsen</td><td>3 displaytoetsen met kleurenscherm</td></tr>
+    <tr><td>Draadloos</td><td>Wifi 2,4 GHz, Bluetooth Low Energy</td></tr>
+    <tr><td>Smart home</td><td>MQTT, met automatische herkenning in Home Assistant</td></tr>
+    <tr><td>Montage</td><td>Inbouwdoos met fase en nul-draad (230 V)</td></tr>
+    <tr><td>Gebruik</td><td>Binnenshuis, in een droge ruimte</td></tr>
+    <tr><td>App</td><td>RP Products voor Android</td></tr>
+  </table>
+  </article>
+</div></section>
+
+</main>
+<footer><div class="wrap">
+  <div><h3>RP Products</h3><p class="small">Slimme producten voor je smart home, ontworpen en gebouwd in Nederland. RP Products is een merk van RP AudioSystems: car audio, multimedia, navigatie en bluetooth.</p></div>
+  <div><h3>Pagina's</h3><ul>
+    <li><a href="/schermschakelaar">Schermschakelaar</a></li>
+    <li><a href="/smart-home">Smart home</a></li>
+    <li><a href="/handleiding">Handleiding</a></li>
+    <li><a href="/support">Hulp &amp; vragen</a></li>
+    <li><a href="/car-audio">Car audio &amp; inbouw</a></li>
+    <li><a href="/privacy">Privacybeleid</a></li>
+    <li><a href="/voorwaarden">Algemene voorwaarden</a></li></ul></div>
+  <div><h3>Contact</h3><ul>
+    <li><a href="mailto:info@rpproducts.nl">info@rpproducts.nl</a></li>
+    <li>KvK 74958119</li><li>btw-id NL002239610B86</li></ul></div>
+</div>
+<div class="wrap bottom">© 2026 RP AudioSystems · RP Products is een merk van RP AudioSystems</div>
+</footer>
+</body>
+</html>
